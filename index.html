@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+  <title>Muhammad Hamza Ahmad</title>
+      
+</head>
+
+<body>
+  <canvas id="lines-demo"></canvas>
+  <div style="
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 1000px;
+        z-index: 5;
+      " class="draggable" class="ui-widget-content">
+    <nav class="navbar navbar-expand-lg   fixed-top " style="background-color: #0A3A43;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text_light active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text_light" href="#experience_section">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text_light" href="#project_section">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text_light" href="#contact_section">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div style="width: 80%" class="m-auto" id="about_section">
+      <div class="horizontalDivs d-flex flex-column flex-md-row-reverse justify-content-md-between">
+        <div class="">
+          <img src="./assets/project/Hamza.png" alt="Girl in a jacket" class="profile_image mb-3" style="
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: top;
+                border: 1px solid #bbe0eb;
+                padding: 3px;
+              " />
+        </div>
+        <div class="">
+          <h1 class="text_light main_heading font_standard">
+            Hello World, I'm<br />
+            Muhammad Hamza Ahmad
+          </h1>
+        </div>
+      </div>
+      <div class="horizontalDivs">
+        <p class="text_light primary_heading font_standard about_content " style="font-weight: 230">
+          Passionate Front-End Developer with one year of experience in building responsive interfaces and reusable
+          components.<br>Skilled in crafting user-centric designs and delivering solutions tailored to client
+          needs,<br>with a strong drive for continuous learning.
+        </p>
+      </div>
+    </div>
+
+    <div style="width: 80%; margin-top: 60px !important; z-index: 100" class="m-auto row d-flex flex-wrap">
+      <h1 class="text_light main_heading font_standard" style="margin-bottom: 20px; text-align: center">
+        My Skills
+      </h1>
+      <div class="my-2 col-4 col-sm-4 col-md-3 col-lg-3 all web">
+        <div class="tech-image-wrapper img_wrapper">
+          <img loading="lazy" class="image-fluid" src="./assets/react.png" alt="reactjs" decoding="async" />
+          <p class="text_light font_standard secondary_heading m-1">
+            React JS
+          </p>
+        </div>
+      </div>
+
+      <div class="my-2 col-4 col-sm-4 col-md-3 col-lg-3 all web">
+        <div class="tech-image-wrapper img_wrapper">
+          <img loading="lazy" class="image-fluid" src="./assets/typescript-logo.svg" alt="typescript"
+            decoding="async" />
+          <p class="text_light font_standard secondary_heading m-1">TypeScript</p>
+        </div>
+      </div>
+      <div class="my-2 col-4 col-sm-4 col-md-3 col-lg-3 all mobile">
+        <div class="tech-image-wrapper img_wrapper">
+          <img loading="lazy" class="image-fluid" src="./assets/js.svg" alt="javaScript" decoding="async" />
+          <p class="text_light font_standard secondary_heading m-0">
+            JavsScript
+          </p>
+        </div>
+      </div>
+
+      <div class="my-2 col-4 col-sm-4 col-md-3 col-lg-3 all front_tech">
+        <div class="tech-image-wrapper img_wrapper">
+          <img loading="lazy" class="image-fluid" src="./assets/html-5.png" alt="html5" decoding="async" />
+          <p class="text_light font_standard secondary_heading m-0">HTML5</p>
+        </div>
+      </div>
+
+      <div class="my-2 col-4 col-sm-4 col-md-3 col-lg-3 all front_tech">
+        <div class="tech-image-wrapper img_wrapper">
+          <img loading="lazy" class="image-fluid" src="./assets/css-3.png" alt="css3" decoding="async" />
+          <p class="text_light font_standard secondary_heading m-0">CSS3</p>
+        </div>
+      </div>
+
+      <div class="my-2 col-4 col-sm-4 col-md-3 col-lg-3 all front_tech">
+        <div class="tech-image-wrapper img_wrapper">
+          <img loading="lazy" class="image-fluid" src="./assets/bootstrap-logo-shadow.png" alt="bootstrap"
+            decoding="async" />
+          <p class="text_light font_standard secondary_heading m-0">
+            Bootstrap
+          </p>
+        </div>
+      </div>
+
+      <div class="my-2 col-4 col-sm-4 col-md-3 col-lg-3 all web">
+        <div class="tech-image-wrapper img_wrapper">
+          <img loading="lazy" class="image-fluid" src="./assets/TailwindCSS.png" alt="tailwindcss" decoding="async" />
+          <p class="text_light font_standard secondary_heading m-1">
+            Tailwind CSS
+          </p>
+        </div>
+      </div>
+
+      <div class="my-2 col-4 col-sm-4 col-md-3 col-lg-3 all web">
+        <div class="tech-image-wrapper img_wrapper">
+          <img loading="lazy" class="image-fluid" src="./assets/figma.png" alt="materialui" decoding="async" />
+          <p class="text_light font_standard secondary_heading m-0">
+            Figma
+          </p>
+        </div>
+      </div>
+
+      <div class="my-2 col-4 col-sm-4 col-md-3 col-lg-3 all web">
+        <div class="tech-image-wrapper img_wrapper">
+          <img loading="lazy" class="image-fluid" src="./assets/GitHub.png" alt="github" decoding="async" />
+          <p class="text_light font_standard secondary_heading m-1">Github</p>
+        </div>
+      </div>
+    </div>
+    <div style="width: 80%; margin-top: 60px !important; z-index: 100" class="m-auto" id="experience_section">
+      <h1 class="text_light main_heading font_standard" style="margin-bottom: 20px; text-align: center">
+        Experience
+      </h1>
+      <div style="
+            padding: 15px 30px;
+            background-color: #bbe0eb0d;
+            -webkit-box-shadow: 0px 3px 7px #0000000d;
+            margin-bottom: 20px;
+          ">
+        <p class="text_light font_standard primary_heading m-0">
+          React Js Developer @ HPS SoftStudio
+        </p>
+        <p class="text_light font_standard tertiary_heading">
+          Nov. 2024 - May 2025
+        </p>
+        <p class="text_light font_standard secondary_heading">
+          As a web developer, I had contributed in projects and often collaborating as a team member. In React, I
+          confidently tackle
+          challenging tasks with ease and enthusiasm.
+        </p>
+        <p class="text_light font_standard secondary_heading m-0">
+          Responsibilities:
+        </p>
+        <p class="text_light font_standard secondary_heading">
+          UI Implementaion
+          <span style="color: yellow; font-size: 20px">|</span> Functionality
+          <span style="color: yellow; font-size: 20px">|</span> Responsive
+          design <span style="color: yellow; font-size: 20px">|</span> API
+          integration
+
+        </p>
+      </div>
+      <div style="
+            padding: 15px 30px;
+            background-color: #bbe0eb0d;
+            -webkit-box-shadow: 0px 3px 7px #0000000d;
+          ">
+        <p class="text_light font_standard primary_heading m-0">
+          Front-End Developer @ Allied Tajar
+        </p>
+        <p class="text_light font_standard tertiary_heading">
+          Jun 2024 - Oct. 2024
+        </p>
+        <p class="text_light font_standard secondary_heading">
+          As a web developer, I built and tested websites.I've contributed in projects,
+          collaborating with teams.
+        </p>
+        <p class="text_light font_standard secondary_heading m-0">
+          Responsibilities:
+        </p>
+        <p class="text_light font_standard secondary_heading">
+          UI Implementaion
+          <span style="color: yellow; font-size: 20px">|</span> Designing
+          <span style="color: yellow; font-size: 20px">|</span> Functionality
+          <span style="color: yellow; font-size: 20px">|</span> Responsive
+          design
+
+        </p>
+      </div>
+    </div>
+
+    <div style="width: 80%; margin-top: 60px !important; z-index: 100" class="m-auto" id="project_section">
+      <h1 class="text_light main_heading font_standard" style="margin-bottom: 20px; text-align: center">
+        Projects
+      </h1>
+      <div style="
+            margin-top: 50px !important;
+            /* column-gap: 40px;
+            row-gap: 40px;
+            width: 100%; */
+          " class="m-auto d-flex flex-wrap row-gap-3 contact_section justify-content-center align-items-stretch">
+        <div class="card project_card">
+          <img class="card-img-top" src="./assets/project/KMW.png" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title primary_heading font_standard" style="font-weight: 500">
+              KMW Stuff
+            </h5>
+            <p class="card-text secondary_heading font_standard">
+              KMW Stuff is an E-commerece website. Key features include: Uploading multiple pictures of dresses and
+              categories into kid, Men and women. It has product detail page which provide all detail about product to
+              customer, and have cart option where selected products have been shown. It also shows calculated price and
+              checkout receipt.
+            </p>
+            <div class="d-flex flex-wrap">
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/react.png" alt="react" decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/typescript-logo.svg" alt="redux"
+                  decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/js.svg" alt="javascript" decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/bootstrap-logo-shadow.png" alt="tailwind"
+                  decoding="async" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project_card">
+          <img class="card-img-top" src="./assets/project/News.png" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title primary_heading font_standard" style="font-weight: 500">
+              World News
+            </h5>
+            <p class="card-text secondary_heading font_standard">
+              World News is website design for people who want to stay updated about world. The uniqueness of this
+              website is, it is build in reactJs using API and categories into different section like business,
+              entertainment, health, science, sports and technologies.
+            </p>
+            <div class="d-flex flex-wrap">
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/react.png" alt="react" decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/js.svg" alt="redux" decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/bootstrap-logo-shadow.png" alt="javascript"
+                  decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/css-3.png" alt="javascript" decoding="async" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project_card">
+          <img class="card-img-top" src="./assets/project/Selfdecode.png" alt="Card image cap" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title primary_heading font_standard" style="font-weight: 500">
+              SelfDecode
+            </h5>
+            <p class="card-text secondary_heading font_standard">
+              It's a DNA testing website, single page website and have all information about DNA like influence on
+              health, risks and medication. Features : user get information, user order medicine and see health reports.
+              User can be in touch with selfdecode.
+            </p>
+            <div class="d-flex flex-wrap mt-auto">
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/js.svg" alt="react" decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/bootstrap-logo-shadow.png" alt="javascript"
+                  decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/css-3.png" alt="firebase" decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/html-5.png" alt="firebase" decoding="async" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project_card">
+          <img class="card-img-top" src="./assets/project/E-sheba.png" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title primary_heading font_standard" style="font-weight: 500">
+              E-Sheba
+            </h5>
+            <p class="card-text secondary_heading font_standard">
+              It is medical website, single page website where users can find their doctor. <br> Features: find doctor,
+              get consultancy, contact admin. It is responsive website design with clear and reliable code.
+            </p>
+            <div class="d-flex flex-wrap">
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/bootstrap-logo-shadow.png" alt="react"
+                  decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/css-3.png" alt="javascript" decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/html-5.png" alt="firebase" decoding="async" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card project_card">
+          <img class="card-img-top" src="./assets/project/AI.png" alt="Card image cap" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title primary_heading font_standard" style="font-weight: 500">
+              Artificial Intelligence
+            </h5>
+            <p class="card-text secondary_heading font_standard">
+              It is website about artificial Intelligence which proper overview about AI.
+              It is Created over five screens
+              covering detailed sections on AI information, features, components, benefits and queries.
+              Informative and attractive website design which enhances user experiance, and have direct access to
+              chatgpt. The design is modern, and visually engaging, ensuring an impactful and
+              professional online presence.
+            </p>
+            <div class="d-flex flex-wrap mt-auto">
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/bootstrap-logo-shadow.png" alt="javascript"
+                  decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/css-3.png" alt="bootstrap" decoding="async" />
+              </div>
+              <div class="project-tech-image-wrapper">
+                <img loading="lazy" class="image-fluid" src="./assets/html-5.png" alt="html" decoding="async" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 80%; margin-top: 60px !important; z-index: 100" class="m-auto" id="contact_section">
+        <h1 class="text_light main_heading font_standard" style="margin-bottom: 20px; text-align: center">
+          Contact Me
+        </h1>
+        <div style="width: 80%; margin-top: 50px !important"
+          class="m-auto d-flex flex-wrap contact_section justify-content-center align-items-center">
+          <a class="inner_box" href="https://www.linkedin.com/in/hamza-ahmad860/" target="_blank">
+            <div class="contact_icon_wrapper">
+              <img loading="lazy" class="image-fluid" src="./assets/icon-linkedin.png" alt="linkedin"
+                decoding="async" />
+            </div>
+          </a>
+          <a class="inner_box" href="https://github.com/Hamza-Creations/" target="_blank">
+            <div class="contact_icon_wrapper">
+              <img loading="lazy" class="image-fluid" src="./assets/icon-github.png" alt="github" decoding="async" />
+            </div>
+          </a>
+        </div>
+        <p class="font_standard primary_heading mt-3" style="text-align: center; color: white">
+          <span style="color: yellow; font-size: 20px">Gmail: </span>
+          muhammadhamzaahmad4@gmail.com
+
+        </p>
+        <p class="font_standard primary_heading mt-3" style="text-align: center; color: white">
+          <span style="color: yellow; font-size: 20px">Contact#</span>
+          +92344-7400860
+        </p>
+      </div>
+      <p class="text_light font_standard tertiary_heading" style="margin-top: auto; text-align: center">
+        Version 1 . 0 . 0
+      </p>
+    </div>
+
+    <script src="canvas.js"></script>
+</body>
+
+</html>
