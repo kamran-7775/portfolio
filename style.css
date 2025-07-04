@@ -160,11 +160,12 @@ canvas {
     margin: 8px 20px 0px 20px;
 }
 .tech-image-wrapper {
-    
-    
-    padding: 0px;
-     background-color: none;
-}
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    height: auto;
+    flex-direction: column;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -193,6 +194,7 @@ canvas {
     /* width: 20rem; */
     margin: 15px;
   }
+  
 }
 
 /* Medium devices (tablets, 768px and up) */
