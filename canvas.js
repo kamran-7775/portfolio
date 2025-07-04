@@ -1,4 +1,16 @@
 
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navbar = document.querySelector('.navbar-collapse');
+      const bsCollapse = new bootstrap.Collapse(navbar, {
+        toggle: false
+      });
+      bsCollapse.hide();
+    });
+  });
+
+
+
 const canvas = document.getElementById("lines-demo");
 const ctx = canvas.getContext("2d");
 
